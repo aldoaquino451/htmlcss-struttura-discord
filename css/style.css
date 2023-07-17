@@ -10,37 +10,83 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.debug {
+  border: 2px dotted brown;
+}
+
 /* header  */
 .menu {
   background-color: aquamarine;
+
   padding: 20px 0;
 }
 
 .menu-content {
+  background-color: yellowgreen;
+
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
+
   display: flex;
   justify-content: space-between;
-  background-color: yellowgreen;
-  border: 2px dotted brown;
 }
 
 .menu-content > * {
-  padding: 20px;
-  border-left: 2px dotted brown;
-  border-right: 2px dotted brown;
+  padding: 10px;
 }
 
 .download {
   background-color: blue;
-  padding: 20px 0;
+
+  padding: 50px 0;
 }
 
 .download-content {
   background-color: blueviolet;
+  height: 250px;
+
   width: 70%;
   max-width: 800px;
-  height: 300px;
   margin: 0 auto;
+}
+
+/* main  */
+
+main section {
+  padding: 50px 0;
+}
+
+main section.section-grey {
+  background-color: lightgray;
+}
+
+main section > * {
+  height: 300px;
+
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+  display: flex;  /**/
+}
+
+main section:last-child > * {
+  background-color: lightgreen;
+  height: 400px;
+
+  flex-direction: column;
+}
+
+
+.img {
+  background-color: lightskyblue;
+
+  width: 60%;
+}
+
+.text {
+  background-color: pink;
+
+  width: 40%;
 }
