@@ -27,6 +27,15 @@ body {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 /**/
 .debug {
   border: 3px dotted brown;
@@ -43,7 +52,6 @@ body {
 
 .menu-content {
   background-color: yellowgreen; /**/
-  display: flex;
   justify-content: space-between;
 }
 
@@ -78,13 +86,11 @@ main section.section-grey {
 
 main section > * {
   height: 300px; /**/
-  display: flex;  
 }
 
 main section:last-child > * {
   height: 400px; /**/
   background-color: lightgreen;  /**/
-  flex-direction: column;  
 }
 
 .img {
@@ -110,7 +116,6 @@ footer {
 .info {
   height: 400px; /**/
   margin-bottom: 20px;
-  display: flex;
 }
 
 .info .info-content {
@@ -127,7 +132,6 @@ footer {
   background-color: lightsalmon; /**/
   border-top: 5px solid white;
   padding: 20px 0;
-  display: flex;
   justify-content: space-between;
 }
 
