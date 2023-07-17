@@ -1,33 +1,48 @@
-/* reset */
+/* color
+  header: #404eed
+  main: #f6f6f6
+  footer: #23272a  */
+
+/*--------------
+    RESET
+---------------*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* general */
+/*--------------
+    GENERAL
+---------------*/
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.debug {
-  border: 2px dotted brown;
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* header  */
-.menu {
-  background-color: aquamarine;
+/**/
+.debug {
+  border: 3px dotted brown;
+}
 
+/*--------------
+    HEADER
+---------------*/
+
+.menu {
+  background-color: aquamarine; /**/
   padding: 20px 0;
 }
 
 .menu-content {
-  background-color: yellowgreen;
-
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
-
+  background-color: yellowgreen; /**/
   display: flex;
   justify-content: space-between;
 }
@@ -37,56 +52,85 @@ body {
 }
 
 .download {
-  background-color: blue;
-
+  background-color: #404eed;
   padding: 50px 0;
 }
 
 .download-content {
-  background-color: blueviolet;
-  height: 250px;
-
+  height: 250px;  /***/
+  background-color: blueviolet; /**/  
   width: 70%;
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* main  */
+/*--------------
+    MAIN
+---------------*/
 
 main section {
   padding: 50px 0;
 }
 
 main section.section-grey {
-  background-color: lightgray;
+  background-color: #f6f6f6;
 }
 
 main section > * {
-  height: 300px;
-
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
-  
-  display: flex;  /**/
+  height: 300px; /**/
+  display: flex;  
 }
 
 main section:last-child > * {
-  background-color: lightgreen;
-  height: 400px;
-
-  flex-direction: column;
+  height: 400px; /**/
+  background-color: lightgreen;  /**/
+  flex-direction: column;  
 }
 
-
 .img {
-  background-color: lightskyblue;
-
+  background-color: lightskyblue;  /**/
   width: 60%;
 }
 
 .text {
-  background-color: pink;
-
+  background-color: pink;  /**/
   width: 40%;
+}
+
+/*--------------
+    FOOTER
+---------------*/
+
+footer {
+  background-color: #23272a;
+  color: white;
+  padding: 30px 0;
+}
+
+.info {
+  height: 400px; /**/
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.info .info-content {
+  background-color: lightseagreen; /**/
+  width: calc(70% / 4);
+}
+
+.info .social {
+  background-color: lightcoral; /**/
+  width: 30%;
+}
+
+.signin {
+  background-color: lightsalmon; /**/
+  border-top: 5px solid white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signin > * {
+  padding: 10px;
 }
